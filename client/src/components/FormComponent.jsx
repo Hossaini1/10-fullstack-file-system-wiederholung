@@ -52,7 +52,7 @@ const FormComponent = () => {
     // using axios
 
     const sendData = async () => {
-     const response = await  axios.post('http://localhost:3002/user',formData) // react to json
+     const response = await  axios.post('http://localhost:3400/user',formData) // react to json
      console.log(response.data)
     }
 
@@ -126,7 +126,7 @@ const FormComponent = () => {
             type="checkbox"
             name="isStudent"
             id="isStudent"
-            required
+          
             className="h-4 w-4 text-indigo-600  border-gray-300 rounded"
             checked={formData.isStudent}
             onChange={handleChange}
